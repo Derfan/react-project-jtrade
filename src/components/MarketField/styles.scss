@@ -1,0 +1,39 @@
+.market-field {
+  width: 156px;
+  position: relative;
+
+  .field {
+    color: #313030;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 5px 42px 5px 13px;
+    width: 100%;
+    outline: none;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+
+    &:hover {
+      border-color: #4db6e2;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px 0 #4db6e2;
+    }
+  }
+
+  .label {
+    color: rgba(#313030, 0.45);
+    padding: 6px 14px 6px 0;
+    text-transform: uppercase;
+    width: 43px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

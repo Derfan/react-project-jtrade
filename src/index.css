@@ -1,0 +1,37 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #1d1d1d;
+  background-color: #f2f3f5;
+  background-image: url("./assets/pattern.svg");
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #4db6e2;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,31 @@
+.switch-button {
+  display: block;
+  background: rgba(white, 0.1);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 18px 40px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  text-align: center;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &.active {
+    background: rgba(white, 0.3);
+  }
+
+  .currency {
+    font-weight: bold;
+
+    &,
+    .name {
+      display: block;
+    }
+  }
+}

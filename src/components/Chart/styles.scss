@@ -1,0 +1,24 @@
+.chart {
+  margin-bottom: 45px;
+
+  &-header {
+    font-weight: bold;
+    color: #271841;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    background: #edeff2;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &-block {
+    width: 750px;
+    height: 400px;
+    position: relative;
+  }
+
+  .buttons {
+    display: flex;
+  }
+}

@@ -1,0 +1,27 @@
+.switch-button {
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 18px 40px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  text-align: center;
+  margin-right: 20px;
+}
+.switch-button:last-child {
+  margin-right: 0;
+}
+.switch-button:hover,
+.switch-button.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+.switch-button .currency {
+  font-weight: bold;
+}
+.switch-button .currency,
+.switch-button .currency .name {
+  display: block;
+}

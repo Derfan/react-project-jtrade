@@ -1,0 +1,21 @@
+.header {
+  background-color: #2a2c2e;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #61dafb;
+  }
+
+  .button-wrapper {
+    display: flex;
+  }
+}

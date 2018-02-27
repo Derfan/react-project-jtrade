@@ -1,0 +1,19 @@
+.wallet {
+  margin-bottom: 62px;
+}
+.wallet .row {
+  margin-bottom: 17px;
+}
+.wallet .row:last-child {
+  margin-bottom: 0;
+}
+.wallet .error {
+  color: firebrick;
+  margin-bottom: 16px;
+}
+.wallet .error:last-child {
+  margin-bottom: 0;
+}
+.wallet .wrapper {
+  position: relative;
+}

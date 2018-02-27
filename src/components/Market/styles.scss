@@ -1,0 +1,51 @@
+.market {
+  .row {
+    margin-bottom: 18px;
+    display: flex;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    padding: 6px;
+    min-width: 93px;
+    margin-left: 22px;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    border: none;
+    text-align: center;
+
+    &:hover {
+      box-shadow: 3px 5px 15px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &.sell {
+      background-color: #db5753;
+    }
+
+    &.purchase {
+      background-color: #4db6e2;
+    }
+  }
+
+  .error {
+    color: firebrick;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

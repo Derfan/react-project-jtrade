@@ -1,0 +1,33 @@
+{
+  "name": "main-homework",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "chart.js": "^2.7.1",
+    "chartkick": "^2.2.4",
+    "concurrently": "^3.5.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "nanoid": "^1.0.1",
+    "node-sass-chokidar": "^0.0.3",
+    "react": "^16.2.0",
+    "react-chartkick": "^0.1.5",
+    "react-dom": "^16.2.0",
+    "react-particles-js": "^2.1.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-saga": "^0.16.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "yarn run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "concurrently \"yarn watch-css\" \"react-scripts start\"",
+    "build": "node-sass-chokidar src/ -o src/ && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

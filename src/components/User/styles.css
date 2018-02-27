@@ -1,0 +1,96 @@
+.user {
+  border-radius: 16px;
+  background-color: #545657;
+  padding: 8px 28px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  position: relative;
+}
+.user .handler {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.user .handler:after {
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-color: white transparent transparent;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.user .drop {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  top: 50%;
+  padding: 16px 28px;
+  border-radius: 0 0 16px 16px;
+  z-index: 0;
+  background-color: #545657;
+  animation: drop-out 0.4s forwards;
+}
+.user .drop .btn {
+  opacity: 0;
+}
+.user .drop.show {
+  animation: drop-in 0.4s forwards;
+}
+.user .drop.show .btn {
+  opacity: 1;
+}
+.user .btn {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  padding: 6px;
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  border: none;
+  background-color: #db5753;
+}
+.user .btn:hover {
+  box-shadow: 3px 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.user .btn:active {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+@keyframes drop-in {
+  from {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  to {
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@keyframes drop-out {
+  from {
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  to {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

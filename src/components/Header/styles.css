@@ -1,0 +1,18 @@
+.header {
+  background-color: #2a2c2e;
+  color: white;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #61dafb;
+}
+.header .button-wrapper {
+  display: flex;
+}

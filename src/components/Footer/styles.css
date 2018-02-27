@@ -1,0 +1,40 @@
+.footer {
+  background-color: #1e2021;
+  color: white;
+  min-height: 270px;
+  padding: 20px 0;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .copyright {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.footer .copyright a {
+  font-weight: bold;
+}
+.footer .link {
+  color: inherit;
+}
+.footer .menu {
+  display: flex;
+}
+.footer .menu-link {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-right: 44px;
+}
+.footer .menu-link:last-child {
+  margin-right: 0;
+}
+.footer .menu-link:hover {
+  text-decoration: underline;
+}
